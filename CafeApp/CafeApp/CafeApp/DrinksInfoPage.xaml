@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CafeApp.DrinksInfoPage">
+    <ContentPage.Content>
+        <Grid Padding="5" RowSpacing="10" ColumnSpacing="0" BackgroundColor="#181f29">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Frame Padding="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#02af6a"/>
+            <Label Text="Cafe Americano" Padding="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+            <Label Text="$2.50" Padding="5" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+
+            <Frame Padding="5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#02af6a"/>
+            <Label Text="Cafe Latte" Padding="5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+            <Label Text="$3.00" Padding="5" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+
+            <Frame Padding="5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#02af6a"/>
+            <Label Text="Cappucino" Padding="5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+            <Label Text="$3.50" Padding="5" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+
+            <Frame Padding="5" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#02af6a"/>
+            <Label Text="Single Shot" Padding="5" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+            <Label Text="$0.75" Padding="5" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+
+            <Frame Padding="5" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#02af6a"/>
+            <Label Text="Cloud Macchiato" Padding="5" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+            <Label Text="$3.50" Padding="5" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+
+            <Frame Padding="5" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#02af6a"/>
+            <Label Text="Dolce Latte" Padding="5" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+            <Label Text="$4.50" Padding="5" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="white" FontSize="25"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

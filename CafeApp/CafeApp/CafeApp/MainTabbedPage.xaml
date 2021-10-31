@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CafeApp.MainTabbedPage"
+                BarBackgroundColor="#02af6a"
+                BarTextColor="White"
+                NavigationPage.HasNavigationBar="False">
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="Menu" BackgroundColor="#181f29">
+        <StackLayout>
+            <Frame BackgroundColor="Transparent" VerticalOptions="CenterAndExpand">
+                <Image Source="https://i.ibb.co/Db3ZwNL/Jules-Cafe-Icon.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Scale="2.5"/>
+            </Frame>
+            <Frame BackgroundColor="#02af6a" CornerRadius="0">
+                <Button x:Name="EspressoButton" Text="Espresso   >" TextColor="White" FontSize="30" BackgroundColor="Transparent" Clicked="EspressoButton_Clicked"/>
+            </Frame>
+            <Frame BackgroundColor="#02af6a" CornerRadius="0">
+                <Button x:Name="BreakfastButton" Text="Hot Drinks   >" TextColor="White" FontSize="30" BackgroundColor="Transparent" Clicked="BreakfastButton_Clicked"/>
+            </Frame>
+            <Frame BackgroundColor="#02af6a" CornerRadius="0">
+                <Button x:Name="LunchButton" Text="Cold Drinks   >"  TextColor="White" FontSize="30" BackgroundColor="Transparent" Clicked="LunchButton_Clicked"/>
+            </Frame>
+            <Frame BackgroundColor="#02af6a" CornerRadius="0">
+                <Button x:Name="DrinksButton" Text="Quick Bites  >" TextColor="White" FontSize="30" BackgroundColor="Transparent" Clicked="DrinksButton_Clicked"/>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="ABOUT" BackgroundColor="#181f29">
+        <Grid Padding="5" RowSpacing="10" ColumnSpacing="0" BackgroundColor="#181f29">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="https://i.ibb.co/v4fdcQr/cafe-picture.jpg" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="10" />
+            <Label Text="Jules Cafe" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="10" TextColor="White" Font="Bold,30" Padding="25,0"/>
+            <Label Text="A4 Kent Street  &#10;New Market&#10;Auckland&#10;1023&#10;&#10;&#10;+64 9 444 5555&#10;&#10;&#10;info@julescafe.co.nz" Grid.Row="5" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="10" TextColor="White" Font="14" Padding="25,0" VerticalOptions="Start"/>
+            <Image Source="https://i.ibb.co/7bzjLg5/Facebook-Icon.png" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" HorizontalOptions="End" VerticalOptions="Start"/>
+            <Image Source="https://i.ibb.co/R9skRNR/Instagram-Icon.png" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" Margin="5" HorizontalOptions="Start" VerticalOptions="Start"/>
+
+
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="MAP">
+        <StackLayout>
+            <WebView x:Name="mapwebview" Source="https://mobile.here.com/p/h-aHR0cHM6Ly9wbGFjZXMuYXBpLmhlcmUuY29tL3BsYWNlcy92MS9wbGFjZXMvbG9jLWRtVnljMmx2YmoweE8zUnBkR3hsUFRSaEswdGxiblFyVTNRN2JHRnVaejFsYmp0c1lYUTlMVE0yTGpnMk56azFNRFF6T1RRMU16RXlOVHRzYjI0OU1UYzBMamMzTmpjd01qZzRNRGcxT1RNNE8zTjBjbVZsZEQxTFpXNTBLMU4wTzJodmRYTmxQVFJoTzJOcGRIazlRWFZqYTJ4aGJtUTdjRzl6ZEdGc1EyOWtaVDB4TURJek8yTnZkVzUwY25rOVRscE1PMlJwYzNSeWFXTjBQVTVsZDIxaGNtdGxkRHR6ZEdGMFpUMUJkV05yYkdGdVpEdGpiM1Z1ZEhrOVFYVmphMnhoYm1RclEybDBlVHRqWVhSbFoyOXllVWxrUFdKMWFXeGthVzVuTzNOdmRYSmpaVk41YzNSbGJUMXBiblJsY201aGJEdHViR0YwUFMwek5pNDROamd4Tnprek1qRXlPRGt3Tmp0dWJHOXVQVEUzTkM0M056WTJOREU0TkRVM01ETXhNanR3WkhORFlYUmxaMjl5ZVVsa1BUa3dNQzA1TXpBd0xUQXdNREE7Y29udGV4dD1abXh2ZHkxcFpEMDFaVFUzWlRreU1DMDFaRFJrTFRVeE9EVXRPRE0xTkMwMU5qSm1aV0UxTUROaU1XRmZNVFl6TlRRMk9Ua3pORFE1TTE4NE5UazFYek0yTWprbWNtRnVhejB3P2FwcF9pZD0zS0lRbHMyRFNLbE5XZmRhc3BCOSZhcHBfY29kZT1mMnZEbjFUVVlFVm40a1l0d0szN3l3?msg=4a%20Kent%20St" VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

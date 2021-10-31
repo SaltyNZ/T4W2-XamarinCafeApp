@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CafeApp.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DodgerBlue" Padding="24" CornerRadius="0">
+            <Label Text="Coffee Shack" HorizontalTextAlignment="Center" TextColor="White" FontSize="37" />
+        </Frame>
+        <Frame BackgroundColor="LightSeaGreen" CornerRadius="0">
+            <Button x:Name="BreakfastButton" Text="Breakfast   >" TextColor="White" FontSize="37" BackgroundColor="Transparent" Clicked="BreakfastButton_Clicked"/>
+        </Frame>
+        <Frame BackgroundColor="MediumPurple" CornerRadius="0">
+            <Button x:Name="LunchButton" Text="Lunch   >"  TextColor="White" FontSize="37" BackgroundColor="Transparent" Clicked="LunchButton_Clicked"/>
+        </Frame>
+        <Frame BackgroundColor="LightSlateGray" CornerRadius="0">
+            <Button x:Name="DrinksButton" Text="Coffee &amp; Drinks   >" TextColor="White" FontSize="37" BackgroundColor="Transparent" Clicked="DrinksButton_Clicked"/>
+        </Frame>
+        
+    </StackLayout>
+
+
+</ContentPage>
