@@ -573,3 +573,4 @@ C:\Users\adamj\source\repos\T4W2-XamarinCafeApp\CafeApp\CafeApp\CafeApp.Android\
 C:\Users\adamj\source\repos\T4W2-XamarinCafeApp\CafeApp\CafeApp\CafeApp.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\adamj\source\repos\T4W2-XamarinCafeApp\CafeApp\CafeApp\CafeApp.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\adamj\source\repos\T4W2-XamarinCafeApp\CafeApp\CafeApp\CafeApp.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\adamj\source\repos\T4W2-XamarinCafeApp\CafeApp\CafeApp\CafeApp.Android\obj\Debug\110\CafeApp.Android.csproj.CopyComplete
